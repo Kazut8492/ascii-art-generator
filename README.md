@@ -1,0 +1,1 @@
+This project is meant for reviewing golang that I learnt and trying out TypeScript.
