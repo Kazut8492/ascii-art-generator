@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^28.0.0",
     "@types/node": "^16.18.8",
@@ -43,9 +42,13 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
     "@babel/preset-typescript": "^7.18.6",
+    "@testing-library/react": "^13.4.0",
     "@typescript-eslint/eslint-plugin": "^5.46.1",
     "@typescript-eslint/parser": "^5.46.1",
+    "babel-jest": "^29.3.1",
     "eslint": "^8.29.0",
     "eslint-plugin-react": "^7.31.11",
     "husky": "^8.0.2",
@@ -58,5 +61,8 @@
     "*.{ts,tsx}": [
       "prettier --write"
     ]
-  }
+  },
+  "jest":{
+    "testEnvironment": "jsdom"
+}
 }
